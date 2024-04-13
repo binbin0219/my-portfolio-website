@@ -284,6 +284,8 @@ body {
 
     .projects-box {
         padding-top: 40px;
+        display: flex;
+        justify-content: center;
 
         .project {
             display: flex;
@@ -291,6 +293,8 @@ body {
             row-gap: 25px;
             align-items: center;
             border: rgb(53, 53, 53) 0.1px solid;
+            margin-left: auto;
+            margin-right: auto;
             margin-bottom: 40px;
             padding-top: 50px;
             padding-bottom: 50px;
