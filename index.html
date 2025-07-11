@@ -63,7 +63,7 @@
                 <div class="introduction-box col-12 col-xl-4">
                     <h1 style="font-size: 1.8em; color: gray;">Hello, I'm</h1>
                     <h1 style="font-size: 2em;">Teo Jiung Bin</h1>
-                    <h1 style="font-size: 2.3em; color: gray;">Novice Developer</h1>
+                    <h1 style="font-size: 2.3em; color: gray;">Junior Web Developer</h1>
                     <div class="buttons-box">
                         <a href="./Files/Teo-Jiung-Bin-Resume.pdf" download="Teo-Jiung-Bin-Resume.pdf">
                             <button id="download-cv">Download CV</button>
@@ -85,7 +85,7 @@
             <div class="row d-none d-xl-block" style="padding-bottom: 150px;"></div>
             <div class="row information-box">
                 <div class="col-12 col-xl-3 d-flex justify-content-center photo-box">
-                    <img src="./images/rog.png">
+                    <img class="object-fit-cover" src="./images/Software-Developer-Flat-Icon-Graphics-13375448-1.jpg">
                 </div>
                 <div class="col-12 d-block d-xl-none" style="padding-bottom: 100px;"></div>
                 <div class="col-12 col-xl-8 description-box">
@@ -93,21 +93,26 @@
                         <div class="experience-box">
                             <div><img src="./images/experience.png" style="height: 2rem;"></div>
                             <h1>Experience</h1>
-                            <p>Currently no</p>
+                            <p class="m-0">1 year of</p>
                             <p>working experiences as developer</p>
                         </div>
                         <div class="education-box">
                             <div><img src="./images/education.png" style="height: 2rem;"></div>
                             <h1>Education</h1>
-                            <p>Final semester</p>
+                            <p class="m-0">Final semester</p>
                             <p>Diploma in information technology</p>
                         </div>
                     </div>
                     <p>
-                        As a student of Open University Malaysia with a Diploma in Information Technology, I am eager to transition into a software development role. 
-                        Drawing from my background in the F&B sector in Singapore, I bring a strong work ethic, adaptability, and excellent communication skills to the table. 
-                        While my professional experience in tech may be limited, I have actively pursued self-learning opportunities, including completing online 
-                        courses on platforms like Udemy. 
+                        As a Diploma in Information Technology holder from Open University Malaysia, I am a passionate and 
+                        driven web developer with one year of hands-on experience in building full-stack web applications. 
+                        After working in Singapore’s F&B industry at Pepper Lunch, I returned to Kuala Lumpur to pursue my 
+                        interest in tech and have since been working as a web developer.
+
+                        Now, I am seeking new opportunities in Singapore to continue growing in the software development field. 
+                        I bring with me not only strong technical skills but also the discipline, resilience, and adaptability 
+                        gained from my diverse background. I thrive under pressure, can meet strict deadlines, and am always eager 
+                        to learn and contribute as part of a team.
                     </p>
                 </div>
             </div>
@@ -218,16 +223,13 @@
             <div class="row projects-box">
                 <div class="col-12 col-xl-6">
                     <div class="project">
-                        <!-- <div class="media-carousel" data-carousel>
+                        <div class="media-carousel" data-carousel>
                             <div class="media-wrapper">
                                 <div class="media-slide">
-                                    <img src="./images/to-do-app.png">
+                                    <video controls src="/videos/social_media_demo.mp4" class="rounded-4" style="height: auto; width: 100%;"></video>
                                 </div>
                                 <div class="media-slide">
-                                    <video src="video1.mp4" controls></video>
-                                </div>
-                                <div class="media-slide">
-                                    <img src="image2.jpg" alt="Image 2" />
+                                    <video controls src="/videos/social_media_video.mp4" class="rounded-4" style="height: auto; width: 100%;"></video>
                                 </div>
                             </div>
                             <button class="nav-button left d-flex p-2" data-prev>
@@ -242,12 +244,20 @@
                                     <path d="M9 6l6 6l-6 6" />
                                 </svg>
                             </button>
-                        </div> -->
+                        </div>
                         <!-- <img src="./images/to-do-app.png"> -->
-                        <video autoplay controls src="/videos/social_media_video.mp4" class="rounded-4" style="height: auto; width: 100%;"></video>
+                        <!-- <video controls src="/videos/social_media_video.mp4" class="rounded-4" style="height: auto; width: 100%;"></video> -->
                         <h1 class="text-center">Social Media Web Application</h1>
+                        <div class="d-flex gap-3 justify-content-center" style="width: 90%;">
+                            <img style="width: 15%;" src="/images/social_media_tech_logo/nextjs-icon.svg" alt="">
+                            <img style="width: 15%;" src="/images/social_media_tech_logo/919832.png" alt="">
+                            <img style="width: 15%;" src="/images/social_media_tech_logo/images.png" alt="">
+                            <img style="width: 15%;" class="rounded-circle" src="/images/social_media_tech_logo/png-transparent-postgresql-logo-computer-software-database-open-source-s-text-head-snout.png" alt="">
+                        </div>
+                        <p class="m-0">
+                            <i><b>Tech Stack:</b> Next.js + TypeScript, Spring Boot, PostgreSQL</i>
+                        </p>
                         <p>
-                            <i><b>Tech Stack:</b> Next.js + TypeScript, Spring Boot, PostgreSQL</i><br><br>
                             • Built a full-stack social media platform as a personal project<br>
                             • Users can create and share posts with text, images, and videos<br>
                             • Supports likes, comments, and adding friends for social interaction<br>
@@ -256,24 +266,21 @@
                             • Allows editing of personal details such as name and location
                         </p>
                         <div class="buttons-box">
-                            <button onclick="window.open('https://github.com/binbin0219/to-do-app', '_blank')">Github <br> (Front-end)</button>
-                            <button onclick="window.open('https://github.com/binbin0219/to-do-app', '_blank')">Github <br> (Back-end)</button>
-                            <button onclick="window.open('https://to-do-app-ot6l.onrender.com', '_blank')">Live Demo</button>
+                            <button onclick="window.open('https://github.com/binbin0219/social_media_front_end', '_blank')">Github <br> (Front-end)</button>
+                            <button onclick="window.open('https://github.com/binbin0219/social_media_back_end', '_blank')">Github <br> (Back-end)</button>
+                            <button onclick="window.open('https://social-media-front-end-96v7.onrender.com/', '_blank')">Live Demo</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-xl-6">
                     <div class="project">
-                        <!-- <div class="media-carousel" data-carousel>
+                        <div class="media-carousel" data-carousel>
                             <div class="media-wrapper">
                                 <div class="media-slide">
-                                    <img src="./images/to-do-app.png">
+                                    <video controls src="/videos/file_management_system_demo.mp4" class="rounded-4" style="height: auto; width: 100%;"></video>
                                 </div>
                                 <div class="media-slide">
-                                    <video src="video1.mp4" controls></video>
-                                </div>
-                                <div class="media-slide">
-                                    <img src="image2.jpg" alt="Image 2" />
+                                    <video controls src="/videos/cloud_storage_system.mp4" class="rounded-4" style="height: auto; width: 100%;"></video>
                                 </div>
                             </div>
                             <button class="nav-button left d-flex p-2" data-prev>
@@ -288,10 +295,16 @@
                                     <path d="M9 6l6 6l-6 6" />
                                 </svg>
                             </button>
-                        </div> -->
+                        </div>
                         <!-- <img src="./images/to-do-app.png"> -->
-                        <video autoplay controls src="/videos/cloud_storage_system.mp4" class="rounded-4" style="height: auto; width: 100%;"></video>
-                        <h1 class="text-center">Cloud Storage System</h1>
+                        <!-- <video controls src="/videos/cloud_storage_system.mp4" class="rounded-4" style="height: auto; width: 100%;"></video> -->
+                        <h1 class="text-center">Cloud-based File Management System</h1>
+                        <div class="d-flex gap-3 justify-content-center" style="width: 90%;">
+                            <img style="width: 15%;" class="rounded-circle" src="/images/social_media_tech_logo/Unofficial_JavaScript_logo_2.svg.png" alt="">
+                            <img style="width: 15%;" src="/images/social_media_tech_logo/919832.png" alt="">
+                            <img style="width: 15%;" class="rounded-circle border border-2" src="/images/social_media_tech_logo/laravel.png " alt="">
+                            <img style="width: 15%;" src="/images/social_media_tech_logo/pngimg.com - mysql_PNG9.png" alt="">
+                        </div>
                         <p>
                             <i><b>Tech Stack:</b> Vanilla JavaScript + TypeScript, Laravel, MySQL</i>
                         </p>
@@ -309,12 +322,8 @@
                             <li>Soft delete files and folders with a recycle bin for easy recovery</li>
                             <li>Prompt users when uploading a file with the same name and format — choose to replace or save as a new version (similar to Windows behavior)</li>
                         </ul>
-                        <p>
-                            This project showcases advanced file handling features and user permission control using a clean custom-built interface.
-                        </p>
                         <div class="buttons-box">
-                            <button onclick="window.open('https://github.com/binbin0219/to-do-app', '_blank')">Github</button>
-                            <button onclick="window.open('https://to-do-app-ot6l.onrender.com', '_blank')">Live Demo</button>
+                            <button onclick="window.open('https://app.mimar.tech/', '_blank')">Live Demo</button>
                         </div>
                     </div>
                 </div>
@@ -346,8 +355,13 @@
                             </button>
                         </div> -->
                         <!-- <img src="./images/to-do-app.png"> -->
-                        <video autoplay controls src="/videos/social_media_video.mp4" class="rounded-4" style="height: auto; width: 100%;"></video>
+                        <video controls src="/videos/bim_viewer.mkv" class="rounded-4" style="height: auto; width: 100%;"></video>
                         <h1 class="text-center">BIM Model Viewer Enhancements</h1>
+                        <div class="d-flex gap-3 justify-content-center" style="width: 90%;">
+                            <img style="width: 15%;" src="/images/social_media_tech_logo/919832.png" alt="">
+                            <img style="width: 15%;" class="rounded-circle border border-2" src="/images/social_media_tech_logo/laravel.png " alt="">
+                            <img style="width: 15%;" src="/images/social_media_tech_logo/pngimg.com - mysql_PNG9.png" alt="">
+                        </div>
                         <p><i><b>Tech Stack:</b> Vanilla TypeScript, Laravel, MySQL</i></p>
                         <ul>
                             <li>Extended an interactive BIM model viewer with advanced functionality</li>
@@ -358,8 +372,7 @@
                             <li>Fully integrated drawing tool with both animation and clash features</li>
                         </ul>
                         <div class="buttons-box">
-                            <button onclick="window.open('https://github.com/binbin0219/to-do-app', '_blank')">Github</button>
-                            <button onclick="window.open('https://to-do-app-ot6l.onrender.com', '_blank')">Live Demo</button>
+                            <button onclick="window.open('https://app.mimar.tech/', '_blank')">Live Demo</button>
                         </div>
                     </div>
                 </div>
@@ -386,9 +399,9 @@
                             <div><img src="./images/linkedin.png"></div>
                             <p onclick="window.open('https://www.linkedin.com/in/teo-jiung-bin-6807132aa/', '_blank')" style="cursor: pointer;">Linkedin</p>
                         </div>
-                        <div class="col-12 col-md-4 contact">
-                            <div><img src="./images/whatsapp.png"></div>
-                            <p>+60 10-795 7070</p>
+                        <div class="col-12 col-md-4 contact" style="cursor: pointer;" onclick="window.open('https://github.com/binbin0219', '_blank')">
+                            <div><img src="./images/icons8-github-480.png"></div>
+                            <p>binbin0219</p>
                         </div>
                     </div>
                 </div>
